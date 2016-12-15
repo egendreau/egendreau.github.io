@@ -6,4 +6,4 @@
 
 ## Description
 
-I've created this site to showcase current projects I'm working on at the moment.
+This site maintains my academic and professional portfolio.
