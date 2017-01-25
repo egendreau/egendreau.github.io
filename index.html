@@ -1,94 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <title>Eric Gendreau</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="description" content="Twitter bootstrap theme">
+  <meta name="author" content="prettystrap">
 
-  <head>
-    <meta charset="utf-8">
-    <title>Eric Gendreau - Resume</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- Le styles -->
-	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
-	<link href="assets/css/style.css" rel="stylesheet">
+  <!-- Load The Story -->
+  <link id="the-story-css-file"href="css/the-story.min.css" rel="stylesheet" media="screen">
 
-    <!-- Fallback for NoScript -->
-    <noscript>
-    <style type="text/css">
-     body {
-        display: block;
-     }
-    </style>
-    </noscript>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/favicon.ico">
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
-      </script>
-    <![endif]-->
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="assets/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
-  </head>
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+      <script src="/js/respond.min.js"></script>
+      <![endif]-->
+  <meta http-equiv=X-UA-Compatible content=IE=edge>
+</head>
 
-  <body>
-		<section class="container">
+<!-- activate scrollspy -->
 
-			<!-- Header -->
-			<header class="row-fluid">
-				<div class="title span7">
-					<img src="assets/img/profile.jpg" style="width: 150px;" title="That`s me!" alt="My Profile"/>
-					<h1>Eric Gendreau</h1>
-					<h2>Computer Science Student</h2>
-				</div>
-				<div class="social offset1 span4">
-					<ul>
-						<li><i class="icon-home"></i> 29 Henry Drive</li>
-						<li>Belchertown MA, 01007</li>
-						<li><i class="icon-envelope-alt"></i> egendreau@umass.edu</li>
-						<a href="https://github.com/egendreau" ><i class="icon-github" ></i></a></li>
-            <a href="https://www.linkedin.com/in/egendreau" ><i class="icon-linkedin" ></i></a></li>
-					</ul>
-				</div>
-			</header>
+<body id="top" data-spy="scroll" data-target=".navbar" data-offset="50">
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="navbar-container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <i class="fa fa-reorder"></i>
+        </button>
+        <a class="navbar-brand" href="#"></a>
+      </div>
+      <div id="nav-collapse" class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a title="Intro" class="scroll brand-1" href="#home">Intro</a></li>
+          <li><a title="Latest Projects" href="#features" class=" scroll brand-4">Latest Projects</a></li>
+        </ul>
+      </div>
+    </div><!-- /.navbar-container -->
+  </nav>
 
-      <!-- Education -->
-      <article class="row-fluid">
-        <header class="span3">
-          <h3>Education</h3>
-        </header>
-        <div class="span9">
-          <h4>University of Massachusetts Amherst</h4>
-          <h5>Graduating May 2017</h5>
-            <p>Pursuing Bachelors Degree of Science in Computer Science</p>
-            <p>Pursuing Advanced Scholarship with Departmental Honors</p>
-            <p>Concentrating in Artificial Intelligence</p>
-        </div>
-      </article>
+  <!-- Home Page -->
+  <div id="home" class="page color-1">
+    <div id="hero" class="inner-page">
+      <img id="profile" class="img-circle" src="img/profile.jpg">
+      <div id="title-subheading">
+        <h2 id="title" class="large">Eric Gendreau</h2>
+        <h4 class="subtitle">Computer Science Undergraduate</h4>
+        <h4 class="subtitle">University of Massachusetts Amherst</h4>
+      </div>
+    </div>
+  </div> <!-- /#home -->
 
-      <!-- Work -->
-      <article class="row-fluid">
-        <header class="span3">
-          <h3>Work Experience</h3>
-        </header>
-        <div class="span9">
-          <h4>IBM Software Developer Internship</h4>
-          <h5>Summer 2016</h5>
-          <p>Worked on IBM Verse: a modern email client for enterprise (Dojo and React)</p>
-        </div>
-      </article>
+  <!-- Sign up -->
+  <div class="sign-up color-2 visible-lg">
+    <div class="row inner-page">
+      <div class="col-md-12">
+        <h4 class="pull-left"></h4>
+        <a href="#features" class="scroll btn btn-primary pull-right" title="Check out more freatures!"><i class="fa fa-caret-down"></i> Scroll down</a>
+      </div>
+    </div>
+  </div> <!-- /.sign-up -->
 
-			<!-- Footer -->
-			<footer>
-				<a href="#">Download as PDF</a> | <a href="#" onclick="javascript:window.print();">Print</a> | <a href="#top">To top <i class="icon-arrow-up"></i></a>
+  <!-- Feature page-->
+  <div id="features" class="page color-4">
+    <div class="inner-page">
+      <h2 class="page-headline">Latest Project</h2>
+    </div>
 
-			</footer>
-	</section>
+    <div class="row inner-page">
+      <div class="col-md-6 lazy-container">
+        <img class="figurette lazy" src="img/energy-dashboard.png" data-original="img/energy-dashboard.png" alt="energy dashboard main page screenshot" />
+      </div>
+      <div class="col-md-6">
+        <h3>Energy Dashboard</h3>
+        <p class="lead">Built a real-time prototype web application presenting residents with their average electricity usage from the past week.</p>
+        <ul class="list-wide">
+          <li><i class="fa fa-check"></i> Node.JS</li>
+          <li><i class="fa fa-check"></i> Bootstrap</li>
+          <li><i class="fa fa-check"></i> Web Sockets</li>
+          <li><i class="fa fa-check"></i> Sessions</li>
+        </ul>
+      </div>
+    </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-<script src="assets/js/main.js"></script>
-	</body>
+    <hr>
 
+  <!-- The footer, social media icons, and copyright -->
+  <footer class="page color-5">
+    <div class="inner-page row">
+      <div class="col-md-6 social">
+        <a href="#contact"><i class="fa fa-twitter"></i></a>
+        <a href="#contact"><i class="fa fa-github-square"></i></a>
+        <a href="#contact"><i class="fa fa-facebook-square"></i></a>
+        <a href="#contact"><i class="fa fa-google-plus-square"></i></a>
+      </div>
+      <div class="col-md-6 text-right copyright">
+        &copy; 2013 <a href="http://prettystrap.com" title="twitter bootstrap themes">prettystrap.com</a> | all rights reserved | <a href="#top" title="Got to top" class="scroll">To top <i class="fa fa-caret-up"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>
+  if (typeof jQuery == 'undefined') {
+    document.write(unescape("%3Cscript src='js/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+  }
+  </script>
+
+  <!-- JQUERY END -->
+
+  <!-- Minimize in production. -->
+
+  <script src="js/the-story.min.js"></script>
+</body>
 </html>
