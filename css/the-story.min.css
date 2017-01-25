@@ -1154,7 +1154,11 @@ img {
 }
 #hero {
   margin-left: 12%;
-  margin-top: 10%;
+  margin-top: 3%;
+}
+#pet-app-img {
+  width: 50%;
+  margin-left: 25%;
 }
 hr {
   margin-top: 27px;
